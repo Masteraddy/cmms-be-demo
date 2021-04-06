@@ -1,0 +1,62 @@
+
+POST http://localhost:3030/api/filter HTTP/1.1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYzA0OGNiZjkyYzI2MGFhMWNjNzNlNSIsInVzZXJ0eXBlIjoidGVhbS1tZW1iZXIiLCJpYXQiOjE2MTEyNzQ3MjUsImV4cCI6Mzc2MTEyNzQ3MjV9.LmJZWAfMLHTZucaOg4dkUksHtXdYrz-XgA2DYcDVcA8
+
+{
+    "ppmname": "Nooo more",
+      "projectsite": "5ec02d28f92c260aa1cc73e2",
+      "category": "5ec02d93f92c260aa1cc73e3",
+      "startdate": "2020-11-21T12:52:10.884Z",
+      "nextdate": "2020-12-03T22:15:40.025Z",
+      "comment": "Asdfgh fghjk t67ujhgfrd hjhgyuj",
+     "email": "demo@demo.com",
+     "password": "test"
+}
+
+####
+
+POST http://localhost:3030/api/auth
+Content-Type: application/json
+
+{
+ "email": "demo@demo.com",
+  "password": "test"
+}
+
+####
+
+POST http://localhost:3030/api/filter
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNjM5YmEyNjc0M2Q1MGZmNTJjZjdmNiIsInVzZXJ0eXBlIjoibWFuYWdlciIsImlhdCI6MTYxNzM2MTUzOCwiZXhwIjozNzYxNzM2MTUzOH0.gq5blrfcQ9f-jRFmDkirhQyFDwGu0kGzd7qg301Xx2U
+
+{
+  "kva": "13-18",
+  "oil_filter": "OF 408",
+  "fuel_filter": "FF 1117",
+  "oil_required": "7 Ltrs",
+  "air_filter": "AF 205"
+}
+
+####
+
+POST http://localhost:3030/api/regioninfo
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNjM5YmEyNjc0M2Q1MGZmNTJjZjdmNiIsInVzZXJ0eXBlIjoibWFuYWdlciIsImlhdCI6MTYxNzM2MTUzOCwiZXhwIjozNzYxNzM2MTUzOH0.gq5blrfcQ9f-jRFmDkirhQyFDwGu0kGzd7qg301Xx2U
+
+{
+  "site_id": "LG0028",
+  "region": "lagos",
+  "state": "lagos",
+  "site_name": "34/36 Irepodun Str. Oko-Odo Agege",
+  "cluster": "Agbado",
+  "site_classification": "Platinum",
+  "mech_engr": "WASIU AZEEZ ABIODUN '08076371010",
+  "elect_engr": "ADEMIJU IDOWU 08036994637",
+  "driver": "Muftau Abiodun '08022291322",
+  "ac_technicial": "OGUNRONBI ABASS '08137394035",
+  "project_manager": "Oyeyode Joshua",
+  "pm_contact": "09062081361",
+  "cluster_teamlead": "WASIU AZEEZ ABIODUN",
+  "ops_manager": "Olajide Adebayo"
+}
